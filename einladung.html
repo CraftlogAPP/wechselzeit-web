@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Einladung – Wechselzeit</title>
+  <meta name="description" content="Du wurdest zu Wechselzeit eingeladen: App laden, anmelden, Einladungs-Code eingeben." />
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#F6F1E7" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#1A1714" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" type="image/png" href="img/favicon-48.png" />
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+  <link rel="canonical" href="https://wechselzeit.dexware.app/einladung.html" />
+  <link rel="stylesheet" href="site.css" />
+  <script>(function(){try{var t=localStorage.getItem('wz-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+</head>
+<body>
+<a class="skip" href="#inhalt">Zum Inhalt springen</a>
+<div class="wrap narrow">
+  <header class="top"><a class="brand" href="./"><img src="img/icon-192.png" alt="" width="38" height="38" />Wechselzeit</a><nav aria-label="Hauptnavigation"><a href="./">Start</a><button class="theme-btn" type="button" id="themeBtn" aria-label="Hell oder dunkel umschalten">◐</button></nav></header>
+  <main class="doc" id="inhalt">
+
+  <h1>Du wurdest eingeladen</h1>
+  <p>Der andere Elternteil nutzt Wechselzeit für euren gemeinsamen Betreuungsplan und lädt dich dazu ein. So kommst du dazu:</p>
+
+  <div class="note" id="codebox" hidden>
+    <p>Dein Einladungs-Code:</p>
+    <p><strong id="code" style="font-size:28px;letter-spacing:3px;font-family:'Fraunces',Georgia,serif;"></strong></p>
+    <p class="small-print">Der Code gilt 30 Tage und nur einmal. Er steht nur in dieser Adresse (hinter dem #) und wird nicht an unseren Server geschickt.</p>
+    <p><a id="open" href="#">In Wechselzeit öffnen</a> – klappt, wenn die App schon installiert ist. Sonst den Code einfach abtippen.</p>
+  </div>
+
+  <h2>In drei Schritten</h2>
+  <ol>
+    <li>Wechselzeit installieren – <span class="store-soon" role="note">bald bei Google Play</span>.</li>
+    <li>Ein Konto anlegen oder mit Google bzw. Apple anmelden.</li>
+    <li>„Code eingeben“ wählen, den Code eintragen und deinen Namen angeben. Fertig: Ihr seht denselben Plan.</li>
+  </ol>
+
+  <h2>Gut zu wissen</h2>
+  <ul>
+    <li>Die Grundfunktionen sind gratis: Plan, Tausch-Anfragen, Termine und Nachrichten.</li>
+    <li>Hat einer von euch Familie Pro, gilt es für euch beide.</li>
+    <li>Alles, was ihr in der Familie eintragt, seht ihr beide. Mehr dazu im <a href="datenschutz.html">Datenschutz</a>.</li>
+  </ul>
+
+  </main>
+  <footer>
+    <nav aria-label="Rechtliches"><a href="datenschutz.html">Datenschutz</a><a href="agb.html">AGB</a><a href="impressum.html">Impressum</a><a href="konto-loeschung.html">Konto löschen</a></nav>
+    <div class="by">Wechselzeit · von Dexware · Ein Kalender für Eltern, keine Rechtsberatung.</div>
+  </footer>
+</div>
+<script>(function(){var b=document.getElementById('themeBtn');if(!b)return;b.addEventListener('click',function(){var r=document.documentElement;var cur=r.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');var n=cur==='dark'?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('wz-theme',n);}catch(e){}});})();</script>
+<script>(function(){var raw=(location.hash||'').slice(1).toUpperCase().replace(/[^A-Z0-9]/g,'');var m=/^WZ([A-Z0-9]{4})([A-Z0-9]{4})$/.exec(raw);if(!m)return;var c='WZ-'+m[1]+'-'+m[2];document.getElementById('code').textContent=c;document.getElementById('open').setAttribute('href','wechselzeit://einladung?code='+c);document.getElementById('codebox').hidden=false;})();</script>
+</body>
+</html>
