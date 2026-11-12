@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wechselzeit – der ruhige Kalender für getrennte Eltern</title>
+  <meta name="description" content="Wechselzeit zeigt getrennten Eltern auf einen Blick, wann das Kind bei wem ist. Plan, Tausch-Anfragen, Termine und Nachrichten – gratis. Familie Pro mit Ausgaben und PDF-Auszug." />
+  <meta name="robots" content="all" />
+  <meta name="theme-color" content="#F6F1E7" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#1A1714" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" type="image/png" href="img/favicon-48.png" />
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+  <link rel="canonical" href="https://wechselzeit.dexware.app/" />
+  <link rel="preload" href="fonts/Fraunces_600SemiBold.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="stylesheet" href="site.css" />
+  <script>(function(){try{var t=localStorage.getItem('wz-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+</head>
+<body>
+<a class="skip" href="#inhalt">Zum Inhalt springen</a>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="./"><img src="img/icon-192.png" alt="" width="38" height="38" />Wechselzeit</a>
+    <nav aria-label="Hauptnavigation">
+      <a class="hide-s" href="#plan">So geht’s</a>
+      <a href="#preise">Preise</a>
+      <a class="hide-s" href="#fragen">Fragen</a>
+      <button class="theme-btn" type="button" id="themeBtn" aria-label="Hell oder dunkel umschalten">◐</button>
+    </nav>
+  </header>
+
+  <main id="inhalt">
+    <section class="hero" aria-labelledby="titel">
+      <div>
+        <p class="eyebrow">Für getrennte Eltern</p>
+        <h1 id="titel">Wann ist das Kind bei wem? Ein Blick genügt.</h1>
+        <p class="lead">Wechselzeit ist ein ruhiger, gemeinsamer Kalender für beide Eltern: Betreuungsplan, Tausch-Anfragen, Termine und Nachrichten an einem Ort – klar, neutral und nachvollziehbar.</p>
+        <div class="cta">
+          <span class="store-soon" role="note" aria-label="Bald bei Google Play – noch nicht verfügbar">
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M4 2.8v18.4c0 .5.5.8 1 .6l15.6-9.2c.4-.3.4-.9 0-1.2L5 2.2c-.5-.3-1 .1-1 .6Z"/></svg>
+            Bald bei Google Play
+          </span>
+          <span class="hint">Gratis starten. Der Preis für Pro steht <a href="#preise">hier unten</a>.</span>
+        </div>
+      </div>
+
+      <figure class="sheet" role="img" aria-label="Beispiel aus der App: Monatskalender Januar. Heute, Dienstag der 19., ist das Kind bei Anna. Die Tage wechseln wochenweise zwischen Anna (Petrol, Buchstabe A) und Tom (Bernstein, Buchstabe T). Übergabetage am Freitag sind schräg geteilt. Nächste Übergabe Freitag, 18 Uhr.">
+        <div class="today">
+          <div><small>Heute bei</small><div class="who"><span>Anna</span></div></div>
+          <span class="chip">Übergabe Fr 18:00</span>
+        </div>
+        <div class="cal-head"><strong>Januar 2027</strong><span class="arrows">‹ ›</span></div>
+        <div class="cal">
+          <div class="wd">Mo</div><div class="wd">Di</div><div class="wd">Mi</div><div class="wd">Do</div><div class="wd">Fr</div><div class="wd we">Sa</div><div class="wd we">So</div>
+          <div class="day empty"></div>
+          <div class="day empty"></div>
+          <div class="day empty"></div>
+          <div class="day empty"></div>
+          <div class="day a ho from-b"><span class="n">1</span><span class="l">A</span></div>
+          <div class="day a"><span class="n">2</span><span class="l">A</span></div>
+          <div class="day a"><span class="n">3</span><span class="l">A</span></div>
+          <div class="day a"><span class="n">4</span><span class="l">A</span></div>
+          <div class="day a"><span class="n">5</span><span class="l">A</span></div>
+          <div class="day a"><span class="n">6</span><span class="l">A</span></div>
+          <div class="day a"><span class="n">7</span><span class="l">A</span></div>
+          <div class="day b ho from-a"><span class="n">8</span><span class="l">T</span></div>
+          <div class="day b"><span class="n">9</span><span class="l">T</span></div>
+          <div class="day b"><span class="n">10</span><span class="l">T</span></div>
+          <div class="day b"><span class="n">11</span><span class="l">T</span></div>
+          <div class="day b"><span class="n">12</span><i class="dot"></i><span class="l">T</span></div>
+          <div class="day b"><span class="n">13</span><span class="l">T</span></div>
+          <div class="day b"><span class="n">14</span><span class="l">T</span></div>
+          <div class="day a ho from-b"><span class="n">15</span><span class="l">A</span></div>
+          <div class="day a"><span class="n">16</span><span class="l">A</span></div>
+          <div class="day a"><span class="n">17</span><span class="l">A</span></div>
+          <div class="day a"><span class="n">18</span><span class="l">A</span></div>
+          <div class="day a today"><span class="n">19</span><span class="l">A</span></div>
+          <div class="day a"><span class="n">20</span><span class="l">A</span></div>
+          <div class="day a"><span class="n">21</span><span class="l">A</span></div>
+          <div class="day b ho from-a"><span class="n">22</span><span class="l">T</span></div>
+          <div class="day b"><span class="n">23</span><span class="l">T</span></div>
+          <div class="day b"><span class="n">24</span><span class="l">T</span></div>
+          <div class="day b"><span class="n">25</span><span class="l">T</span></div>
+          <div class="day b"><span class="n">26</span><i class="dot"></i><span class="l">T</span></div>
+          <div class="day b"><span class="n">27</span><span class="l">T</span></div>
+          <div class="day b"><span class="n">28</span><span class="l">T</span></div>
+          <div class="day a ho from-b"><span class="n">29</span><span class="l">A</span></div>
+          <div class="day a"><span class="n">30</span><span class="l">A</span></div>
+          <div class="day a"><span class="n">31</span><span class="l">A</span></div>
+        </div>
+        <div class="legend">
+          <span><i class="sw a">A</i>Anna</span>
+          <span><i class="sw b">T</i>Tom</span>
+          <span><i class="sw ho"></i>Übergabe</span>
+          <span><i class="sw dot"></i>Termin</span>
+        </div>
+      </figure>
+    </section>
+
+    <section class="block" id="plan" aria-labelledby="h-plan">
+      <div class="feature">
+        <div>
+          <h2 id="h-plan">Der Plan steht in 30 Sekunden</h2>
+          <p>Wähle euer Betreuungsmodell, das Start-Datum und die Uhrzeit der Übergabe. Wechselzeit rechnet den Kalender für Monate im Voraus aus.</p>
+          <ul>
+            <li>Wechselmodell Woche/Woche, 2-2-3, 2-2-5-5 oder jedes zweite Wochenende</li>
+            <li>Eigenes Muster über 1 bis 4 Wochen – Tage einfach antippen</li>
+            <li>Ferien, Feiertage und Urlaub als Ausnahme eintragen</li>
+            <li>Jeder Tag in der Farbe des Elternteils, dazu ein Buchstabe – auch bei Farbschwäche gut lesbar</li>
+          </ul>
+        </div>
+        <div class="visual card" aria-hidden="true">
+          <div class="pills">
+            <span class="pill">Woche/Woche</span>
+            <span class="pill on">2-2-3</span>
+            <span class="pill">2-2-5-5</span>
+            <span class="pill">Jedes 2. Wochenende</span>
+            <span class="pill">Eigenes Muster</span>
+          </div>
+          <div class="row-days">
+            <div class="day a"><span class="n">Mo</span><span class="l">A</span></div>
+            <div class="day a"><span class="n">Di</span><span class="l">A</span></div>
+            <div class="day b ho from-a"><span class="n">Mi</span><span class="l">T</span></div>
+            <div class="day b"><span class="n">Do</span><span class="l">T</span></div>
+            <div class="day a ho from-b"><span class="n">Fr</span><span class="l">A</span></div>
+            <div class="day a"><span class="n">Sa</span><span class="l">A</span></div>
+            <div class="day a"><span class="n">So</span><span class="l">A</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" aria-labelledby="h-tausch">
+      <div class="feature">
+        <div class="visual card" aria-hidden="true">
+          <div class="req">
+            <div class="who">Tausch-Anfrage von Tom</div>
+            <div class="title">Sa 6. + So 7. März gegen Sa 13. + So 14. März</div>
+            <div class="hint">„Familienfeier bei meinen Eltern.“</div>
+            <div class="btns"><span class="fake-btn">Ablehnen</span><span class="fake-btn yes">Annehmen</span></div>
+            <div class="status">Angenommen von Anna · der Plan ist schon angepasst</div>
+          </div>
+        </div>
+        <div>
+          <h2 id="h-tausch">Tage tauschen, ohne langes Hin und Her</h2>
+          <p>Tage antippen, „Tausch anfragen“, fertig. Der andere Elternteil sagt mit einem Tipp ja oder nein. Bei einem Ja ändert sich der Plan für beide von selbst.</p>
+          <ul>
+            <li>Auf Wunsch mit Gegenangebot und kurzer Begründung</li>
+            <li>Jede Anfrage und jede Antwort bleibt im Verlauf – mit Datum und Uhrzeit</li>
+            <li>Termine für das Kind (Arzt, Schule, Training) mit „wer bringt, wer holt“</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" aria-labelledby="h-nachrichten">
+      <div class="feature">
+        <div>
+          <h2 id="h-nachrichten">Nachrichten bleiben, wie sie geschrieben wurden</h2>
+          <p>Absprachen zum Kind laufen in einem eigenen, sachlichen Verlauf. Gesendete Nachrichten lassen sich nachträglich nicht ändern und nicht löschen – von niemandem. Die Uhrzeit kommt vom Server, und du siehst, wann gelesen wurde.</p>
+          <ul>
+            <li>Optional ein Thema je Nachricht: Übergabe, Gesundheit, Schule, Geld</li>
+            <li>Kind-Mappe für beide: Arzt, Allergien, Größen, Schule</li>
+            <li>Mit Familie Pro: Auszug als PDF für einen Zeitraum, z. B. für eine Beratung</li>
+          </ul>
+        </div>
+        <div class="visual card" aria-hidden="true">
+          <div class="msgs">
+            <div class="msg a">Mia hat am Donnerstag den Zahnarzt-Termin um 15 Uhr. Ich bringe sie hin.<small>Anna · Mo 09:12 · gelesen 09:40</small></div>
+            <div class="msg b">Danke. Die Turnschuhe sind zu klein, ich kaufe neue in Größe 31.<small>Tom · Mo 10:03 · gelesen 10:15</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" aria-labelledby="h-ausgaben">
+      <div class="feature">
+        <div class="visual card" aria-hidden="true">
+          <div class="sum">Ausgleich offen: 42,25 € an Tom</div>
+          <div class="exp"><span>Turnschuhe<small>Tom hat bezahlt · Beleg · bestätigt</small></span><span>49,90 €</span></div>
+          <div class="exp"><span>Klassenfahrt<small>Anna hat bezahlt · Beleg · bestätigt</small></span><span>120,00 €</span></div>
+          <div class="exp"><span>Winterjacke<small>Tom hat bezahlt · Beleg · bestätigt</small></span><span>154,60 €</span></div>
+        </div>
+        <div>
+          <h2 id="h-ausgaben">Wer hat was bezahlt?</h2>
+          <p>Mit Familie Pro tragt ihr Ausgaben fürs Kind mit Foto vom Beleg ein. Der andere bestätigt oder lehnt mit Grund ab. Oben steht neutral, wie viel noch auszugleichen ist.</p>
+          <ul>
+            <li>Aufteilung 50/50 oder wie ihr es vereinbart habt</li>
+            <li>Nur Liste und Saldo – Wechselzeit wickelt keine Zahlungen ab</li>
+            <li>Keine Unterhaltsberechnung, keine Rechtsberatung</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="preise" aria-labelledby="h-preise">
+      <h2 id="h-preise">Preise – offen, vor der Anmeldung</h2>
+      <p class="hint" style="margin-top:10px">Das Wichtigste bleibt für immer gratis. Familie Pro bezahlt nur einer – beide Eltern haben es.</p>
+      <div class="prices">
+        <div class="price">
+          <h3>Gratis</h3>
+          <div class="amount">0 € <small>für immer</small></div>
+          <p class="sub">Für 1 Kind und beide Eltern.</p>
+          <ul>
+            <li>Betreuungsplan und Kalender</li>
+            <li>Tausch-Anfragen</li>
+            <li>Termine</li>
+            <li>Nachrichten (Text)</li>
+            <li>1 Kind, beide Eltern</li>
+          </ul>
+        </div>
+        <div class="price pro">
+          <h3>Familie Pro</h3>
+          <div class="amount">3,99 € <small>im Monat</small></div>
+          <p class="sub">oder 29,99 € im Jahr – im Jahresabo 14 Tage gratis testen.</p>
+          <ul>
+            <li>Alles aus Gratis</li>
+            <li>Mehrere Kinder</li>
+            <li>Ausgaben mit Belegen und Ausgleich</li>
+            <li>Auszug als PDF</li>
+            <li>Fotos in Nachrichten</li>
+            <li>Einer zahlt, beide haben es</li>
+          </ul>
+        </div>
+      </div>
+      <p class="small-print">Kauf über Google Play bzw. den App Store. Preise inkl. USt.; maßgeblich ist der Preis im Store. Das Abo verlängert sich automatisch und ist jederzeit in den Abo-Einstellungen des Stores kündbar. Details in den <a href="agb.html">AGB</a>.</p>
+    </section>
+
+    <section class="block" id="fragen" aria-labelledby="h-fragen">
+      <h2 id="h-fragen">Häufige Fragen</h2>
+      <div class="faq">
+        <details>
+          <summary>Muss der andere Elternteil mitmachen?</summary>
+          <p>Nein. Du kannst allein starten: Plan, Termine, eigene Notizen und Ausgaben funktionieren auch nur für dich. Möchte der andere Elternteil dazukommen, lädst du ihn mit einem Code ein. Dann seht ihr beide denselben Plan.</p>
+        </details>
+        <details>
+          <summary>Was kostet Wechselzeit?</summary>
+          <p>Plan, Kalender, Tausch-Anfragen, Termine und Nachrichten für 1 Kind und beide Eltern sind gratis – für immer. Familie Pro kostet 3,99 € im Monat oder 29,99 € im Jahr (im Jahresabo 14 Tage gratis testen). Einer zahlt, beide haben es. Kündigen kannst du jederzeit im Store.</p>
+        </details>
+        <details>
+          <summary>Wo liegen meine Daten?</summary>
+          <p>Bei unserem Datenbank-Anbieter Supabase, auf Servern in der EU (Frankfurt). Keine Werbung, kein Tracking, keine KI. Sehen können die gemeinsamen Daten nur die beiden Eltern eurer Familie. Mehr dazu im <a href="datenschutz.html">Datenschutz</a>.</p>
+        </details>
+        <details>
+          <summary>Ist Wechselzeit eine Rechtsberatung?</summary>
+          <p>Nein. Wechselzeit ist ein Kalender und ein Werkzeug zum Festhalten von Absprachen. Es gibt keine Rechtsberatung und berechnet keinen Unterhalt. Bei Fragen helfen Familienberatung, Jugendamt bzw. Kinder- und Jugendhilfe, Mediation oder eine Anwältin bzw. ein Anwalt.</p>
+        </details>
+        <details>
+          <summary>Was passiert, wenn ich mein Konto lösche?</summary>
+          <p>Dein Konto und deine Mitgliedschaft in der Familie werden gelöscht. Was ihr gemeinsam angelegt habt – Plan, Nachrichten, Verlauf – bleibt für den anderen Elternteil erhalten; dort stehst du dann als „Ehemaliges Mitglied“. Warst du allein in der Familie, wird alles gelöscht, auch Fotos. Ein Abo kündigst du separat im Store. <a href="konto-loeschung.html">So geht’s</a>.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <nav aria-label="Rechtliches"><a href="datenschutz.html">Datenschutz</a><a href="agb.html">AGB</a><a href="impressum.html">Impressum</a><a href="konto-loeschung.html">Konto löschen</a></nav>
+    <div class="by">Wechselzeit · von Dexware · Ein Kalender für Eltern, keine Rechtsberatung.</div>
+  </footer>
+</div>
+<script>(function(){var b=document.getElementById('themeBtn');if(!b)return;b.addEventListener('click',function(){var r=document.documentElement;var cur=r.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');var n=cur==='dark'?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('wz-theme',n);}catch(e){}});})();</script>
+</body>
+</html>
