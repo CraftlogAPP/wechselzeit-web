@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /einladung.html
+
+Sitemap: https://wechselzeit.dexware.app/sitemap.xml
